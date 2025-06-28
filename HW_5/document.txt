@@ -1,0 +1,15 @@
+from langchain.document_loaders import TextLoader
+from langchain.indexes import VectorstoreIndexCreator
+
+# 1. Загружаем документ
+loader = TextLoader("document.txt")
+
+# 2. Создаём индекс
+index = VectorstoreIndexCreator().from_loaders([loader])
+
+# 3. Запрашиваем
+query = "What is the main idea of the document?"
+response = index.query(query)
+
+print("Answer:")
+print(response)
