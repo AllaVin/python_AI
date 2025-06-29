@@ -1,0 +1,19 @@
+# Python cache
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+*.env
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Streamlit temporary files
+.streamlit/
+
+
